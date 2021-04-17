@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1884a97f2677732b24a15272df7ed57f14e50cf0" datatype="html">
+        <source>Reservation List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description"> Description for page dashboard</note>
+        <note priority="1" from="meaning">header-dashboard </note>
+      </trans-unit>
+      <trans-unit id="e339bd3f8ed9fe04d468535e1df00d48c3278c78" datatype="html">
+        <source>CREATE RESERVATION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description"> button for page dashboard</note>
+        <note priority="1" from="meaning">button-dashboard </note>
+      </trans-unit>
+      <trans-unit id="e3c53be644a42d7ff13ce004b1acb340e820ac36" datatype="html">
+        <source>By Date Ascending</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description"> by date</note>
+        <note priority="1" from="meaning">By Date Ascending </note>
+      </trans-unit>
+      <trans-unit id="dbea12b5acde7fdbab44a0a53c71679e0f106cdc" datatype="html">
+        <source>By Date Descending</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description"> by date</note>
+        <note priority="1" from="meaning">By Date Descending </note>
+      </trans-unit>
+      <trans-unit id="68b8ba149982d487f000bea9e828ee7830fa64df" datatype="html">
+        <source>By Alphabetic Ascending</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description"> by aplha</note>
+        <note priority="1" from="meaning">By Alphabetic Ascending </note>
+      </trans-unit>
+      <trans-unit id="f13c91e83b61298049ed020a193469e8bcf7d669" datatype="html">
+        <source>By Rankig</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description"> by rate</note>
+        <note priority="1" from="meaning">By Rate </note>
+      </trans-unit>
+      <trans-unit id="185cea53ccc79e9fc00dab577fde358b71ed7f5b" datatype="html">
+        <source>Ranking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description"> by rank</note>
+        <note priority="1" from="meaning">By rank </note>
+      </trans-unit>
+      <trans-unit id="3787c6b6d78ef7ac2fc4efada94502683f7b03e2" datatype="html">
+        <source>Add Favorites</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description"> by favorite</note>
+        <note priority="1" from="meaning">favorite </note>
+      </trans-unit>
+      <trans-unit id="8dea5a2661bed636783572691d41078721782867" datatype="html">
+        <source>Create Reservation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/prueba/prueba.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description"> header for page create</note>
+        <note priority="1" from="meaning">header-create </note>
+      </trans-unit>
+      <trans-unit id="da443c0fabe0c2a6fe3b18ef99ac8ac0af8dc376" datatype="html">
+        <source>LIST RESERVATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/prueba/prueba.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description"> button for page create</note>
+        <note priority="1" from="meaning">button-create </note>
+      </trans-unit>
+      <trans-unit id="e5cd4774a26f5f0b3e87b33d3484df912d26e12d" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/prueba/prueba.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description"> button send for page create</note>
+        <note priority="1" from="meaning">button-create-send </note>
+      </trans-unit>
+      <trans-unit id="ad3fdaa860e49e95db3a51d49dac44b1ee91e6f4" datatype="html">
+        <source>EDIT RESERVATION</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/people/people.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description"> Description for page edit</note>
+        <note priority="1" from="meaning">header-edit </note>
+      </trans-unit>
+      <trans-unit id="050f865c46be32ecfee8908b171f2e5242ca67d1" datatype="html">
+        <source>LIST RESERVATIONS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/people/people.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description"> button for page edit</note>
+        <note priority="1" from="meaning">button-edit </note>
+      </trans-unit>
+      <trans-unit id="e51b83f7c7e44e57b960034c35f53dcaa50f3fb4" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/others/people/people.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description"> button-edit for page edit</note>
+        <note priority="1" from="meaning">button-send-edit </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

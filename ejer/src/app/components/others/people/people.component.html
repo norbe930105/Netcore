@@ -1,0 +1,55 @@
+<mat-toolbar class="example-toolbar">
+  <mat-toolbar-row>
+    <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="5rem" fxLayout.xs="column" fxLayoutAlign.xs="start stretch" fxLayoutGap.xs="1rem" style="padding-left: 250px; padding-right: 250px" [ngStyle.xs]="{'padding-left.px': 0, 'padding-right.px': 0}">
+      <div>
+        <span style="color: #b02a37; font-size: 32px" i18n="header-edit | Description for page edit">EDIT RESERVATION</span>
+      </div>
+      <div fxHide.xs style="font-size: 12px; line-height: initial">
+        Lorem ipsum dolor sit amet, consectetur <br>
+        adipiscing elit. Nullam mi felis, auctor <br>
+        vitae vestibulum vel, consequat eu dolor.
+      </div>
+      <div>
+        <button style="background-color: #3c3c3c; color: white; height: 45px; width: 165px; font-size: 12px" routerLink="" i18n="button-edit | button for page edit">LIST RESERVATIONS</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div style="width: 100%; padding-top: 5px; padding-left: 270px; padding-right: 310px" [ngStyle.xs]="{'padding-left.px': 0, 'padding-right.px': 0}">
+  <div style="background-color: white; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+    <form class="form" [formGroup]="reserv" (submit)="editreserva(reserv.value)">
+      <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="0.5rem" fxLayout.xs="column" fxLayoutAlign.xs="start stretch">
+        <mat-form-field appearance="outline" style="width: 190px" [ngStyle.xs]="{'width.%': 100}">
+          <mat-icon matPrefix>supervisor_account</mat-icon>
+          <input matInput formControlName="name" placeholder="Contact Name...">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 190px" [ngStyle.xs]="{'width.%': 100}">
+          <mat-icon matPrefix>public</mat-icon>
+          <mat-label>Contact Type</mat-label>
+          <mat-select formControlName="type">
+            <mat-option value="Contact Type 1">Contact Type 1</mat-option>
+            <mat-option value="Contact Type 2">Contact Type 2</mat-option>
+            <mat-option value="Contact Type 3">Contact Type 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 190px" [ngStyle.xs]="{'width.%': 100}">
+          <mat-icon matPrefix>phone</mat-icon>
+          <input matInput formControlName="phone" placeholder="Phone">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 160px" [ngStyle.xs]="{'width.%': 100}">
+          <mat-label>Birth Date</mat-label>
+          <input matInput formControlName="birth" [matDatepicker]="picker">
+          <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div>
+        <ckeditor></ckeditor>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end stretch">
+        <br>
+        <button [ngStyle.xs]="{'width.%': 100}" [disabled]="reserv.invalid" style="background-color: #b02a37; color: white" i18n="button-send-edit | button-edit for page edit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<mat-toolbar class="example-toolbar">
+  <mat-toolbar-row>
+    <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="5rem" fxLayout.xs="column" fxLayoutAlign.xs="start stretch" fxLayoutGap.xs="1rem" style="padding-left: 250px; padding-right: 250px" [ngStyle.xs]="{'padding-left.px': 0, 'padding-right.px': 0}">
+      <div>
+        <span style="color: #b02a37; font-size: 32px" i18n="header-dashboard | Description for page dashboard">Reservation List</span>
+      </div>
+      <div fxHide.xs style="font-size: 12px; line-height: initial">
+        Lorem ipsum dolor sit amet, consectetur <br>
+        adipiscing elit. Nullam mi felis, auctor <br>
+        vitae vestibulum vel, consequat eu dolor.
+      </div>
+      <div>
+        <button style="background-color: #3c3c3c; color: white; height: 45px; width: 165px; font-size: 12px" routerLink="create" i18n="button-dashboard | button for page dashboard">CREATE RESERVATION</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div style="width: 100%; padding-top: 5px; padding-left: 270px; padding-right: 310px" [ngStyle.xs]="{'padding-left.px': 0, 'padding-right.px': 0}">
+  <div style="background-color: white; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px" fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+    <mat-form-field appearance="outline" style="width: 25%" [ngStyle.xs]="{'width.%': 100}">
+      <div fxLayout="row" fxLayoutAlign="start start">
+        <mat-icon>sort</mat-icon>
+        <mat-label>Sort By</mat-label>
+      </div>
+      <mat-select [formControl]="sort">
+        <mat-option value="dateasc" i18n="By Date Ascending | by date">By Date Ascending</mat-option>
+        <mat-option value="datedesc" i18n="By Date Descending | by date">By Date Descending</mat-option>
+        <mat-option value="alphasc" i18n="By Alphabetic Ascending | by aplha">By Alphabetic Ascending</mat-option>
+        <mat-option value="alphdesc" i18n="By Alphabetic Ascending | by alpha">By Alphabetic Ascending</mat-option>
+        <mat-option value="rate" i18n="By Rate | by rate">By Rankig</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div *ngFor="let cards of data | pagination:page_size:page_number" style="background-color: whitesmoke; padding: 5px" fxLayout="row" fxLayoutAlign="space-between start">
+      <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem" style="width: 220px; height: 35px">
+        <img fxHide.xs style="width: 15%; height: 35px; object-fit: cover" src="assets/images/banner.png">
+        <div fxLayout="column" fxLayoutAlign="start start">
+          <span style="font-size: 12px">{{cards.name}}</span>
+          <span style="font-size: 10px; width: 230%; height: 35px">{{cards.date}}</span>
+        </div>
+      </div>
+      <div fxHide.xs fxLayout="column" fxLayoutAlign="start start">
+        <span i18n="By rank | by rank">Ranking</span>
+        <div fxLayout="row" fxLayoutAlign="start start">
+          <mat-icon *ngFor="let star of cards.star" color="accent">starts</mat-icon>
+          <mat-icon *ngFor="let star1 of cards.nostar">starts</mat-icon>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start start" style="cursor:pointer;">
+        <span fxHide.xs i18n="favorite | by favorite">Add Favorites</span>
+        <mat-icon *ngIf="cards.favorite === true" color="warn" (click)="addfavorite(cards.id)">favorite</mat-icon>
+        <mat-icon *ngIf="cards.favorite === false" (click)="addfavorite(cards.id)">favorite</mat-icon>
+      </div>
+      <button style="background-color: #3c3c3c; color: white; height: 35px; width: 65px" (click)="gotoedit(cards.id)">EDIT</button>
+    </div>
+    <mat-paginator [length]="data?.length"
+                   [pageSize]="page_size"
+                   [pageSizeOptions]="[3, 5, 10, 25, 100]"
+                   (page)="handlePage($event)">
+    </mat-paginator>
+  </div>
+</div>
